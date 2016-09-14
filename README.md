@@ -12,6 +12,7 @@ The Fast Iterative Digital Volume Correlation Algorithm (FIDVC) is the next gene
 * Adds a rather simplistic paralization for MATLAB, with "parfor" for some of the longer-running for loops
 * This gives a speedup factor of about 1.8 for 24 processors on a relatively complex image, but slightly less than 1 on the example data. YMMV
 * Adds data output for [ParaView](http://www.paraview.org/) via the [vtkwrite](https://www.mathworks.com/matlabcentral/fileexchange/47814-vtkwrite---exports-various-2d-3d-data-to-paraview-in-vtk-file-format) function from the Mathworks File Exchange with paraviewOutput.m
+* Rename folder to remove spaces
 
 ## Purpose
 The following implementation contains the Matlab m-files for our FIDVC algorithm. The FIDVC algorithm determines the 3D displacement fields between consecutive volumetric image stacks. To provide maximum user versatility the current version is the CPU-based version, which runs a little bit slower (~ 5 - 15 minutes/per stack) than the GPU-based implementation. As Matlab’s GPU-based subroutines become more efficient we hope to provide the GPU-based version at a later release date. 
