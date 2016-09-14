@@ -49,7 +49,7 @@ end
 [m{2}, m{1}, m{3}] = ndgrid(idx{:});
 
 u = cell(1,3);
-for i = 1:3, u{i} = mirt3D_mexinterp(u0{i}, m_u0{1}, m_u0{2}, m_u0{3}); end
+parfor i = 1:3, u{i} = mirt3D_mexinterp(u0{i}, m_u0{1}, m_u0{2}, m_u0{3}); end
 %% Warp images (see eq. 8)
 mForward = cellfun(@(x,y) x + y, m, u, 'UniformOutput',false);
 mBackward = cellfun(@(x,y) x - y, m, u, 'UniformOutput',false);
