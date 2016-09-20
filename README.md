@@ -16,4 +16,4 @@ The Fast Iterative Digital Volume Correlation Algorithm (FIDVC) is the next gene
 * Warning: this has not be tested extensively or for many cases (no testing other than for the example data and my own work has been conducted).
 
 ## See the original project for more
-[FrannkLab/FIDVC](https://github.com/FranckLab/FIDVC)
+[FranckLab/FIDVC](https://github.com/FranckLab/FIDVC)
