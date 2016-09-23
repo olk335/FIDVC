@@ -14,7 +14,7 @@ From FranckLab:
  * [Franck Lab](http://franck.engin.brown.edu)
  
 ## This Fork:
-Warning: this code is still under active development (even though it's in the "master" branch). It's probably not ready for much serious use.
+Warning: this code is still under active development (even though it's in the "master" branch). It's probably not ready for much serious use. The MATLAB Parallel Toolbox is required.
 * Adds a rather simplistic paralization for MATLAB, with "parfor" for some of the longer-running for loops
 * This gives a speedup factor of about 1.8 for 24 processors on a relatively complex image, but slightly less than 1 on the example data. YMMV
 * Adds data output for [ParaView](http://www.paraview.org/) via the [vtkwrite](https://www.mathworks.com/matlabcentral/fileexchange/47814-vtkwrite---exports-various-2d-3d-data-to-paraview-in-vtk-file-format) function from the Mathworks File Exchange with paraviewOutput.m
